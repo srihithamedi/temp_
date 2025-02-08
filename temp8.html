@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,4 +27,34 @@
     <div id="data"></div>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        function showData(){
+            //alert("Hello World")
+            var A=document.getElementById("name").value
+            var e=document.getElementById("mail").value
+            var p=document.getElementById("pwd").value
+            var d=document.getElementById("dob").value
+            data.innerHTML="Hello "+A+" "+e+" "+p+" "+d
+            data.innerHTML=`${A},${e},${p},${d}`
+        }
+    </script>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <P><input type="text" id="name" placeholder="Enter name"/></P>
+    <P><input type="text" id="mail" placeholder="Enter mail"/></P>
+    <P><input type="password" id="pwd" placeholder="Enter password"/></P>
+    <P><input type="datetime-local" id="dob" placeholder="Enter dob"/></P>
+    <button onclick="showData()">Register</button>
+    <hr/>
+    <div id="data"></div>
+    
+</body>
+>>>>>>> 0d3cb41a1f24e12bf3864effedbda0a14d9c9b51
 </html>

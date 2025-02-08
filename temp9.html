@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,4 +23,30 @@
     <hr/>
     <div id="data"></div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function display(){
+            var e=document.getElementById("email").value 
+            var p=document.getElementById("pwd").value
+            // data.innerHTML=`${e},${p}`
+            if(e=="e"&& p=="1"){
+            data.innerHTML="good"}
+            else{
+            data.innerHTML="wrong"}
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <p><input type="text" id="email" placeholder="Email address"></p>
+    <p><input type="password" id="pwd" placeholder="Password"></p>
+    <button onclick="display()">Login</button>
+    <hr/>
+    <div id="data"></div>
+</body>
+>>>>>>> 0d3cb41a1f24e12bf3864effedbda0a14d9c9b51
 </html>
