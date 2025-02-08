@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function calculate(){
+            var e=parseFloat(document.getElementById("1").value );
+            var p=parseFloat(document.getElementById("2").value );
+            var a=e+p 
+            var s=e-p
+            var m=e*p
+            if(e>p){
+            var d=e/p}
+            else{
+                d=p/e
+            }
+            data.innerHTML=`${a},${s},${m},${d}`
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculate</h1>
+    <p><input type="number" id="1" placeholder="Enter number"></p>
+    <p><input type="number" id="2" placeholder="Enter number"></p>
+    <button onclick="calculate()">Calculate</button>
+    <hr/>
+    <div id="data"></div>
+</body>
+</html>
