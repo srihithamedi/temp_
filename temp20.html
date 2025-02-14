@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const products = [
+            { id: 1, name: "p1", price: 34 },
+            { id: 2, name: "p2", price: 56 },
+            { id: 3, name: "p3", price: 40 },
+
+        ];
+        const cart = {}
+        // const obj = { apple: 1, mango: 2 };
+        const addToCart = (id) => {
+            cart[id]=1
+
+            // if (obj["apple"]) {
+            //     obj["apple"] = obj["apple"] + 1
+            // }
+            // divcart.innerHTML = obj["apple"]
+            // else
+            // {
+            //     console.log("Doesn't")
+            // }
+
+            console.log(cart)
+        }
+        const showcart=()=>{
+
+            letstr="";
+            products.map((value)=>{
+                str+= `<div>${value.id}</div>`;
+            });
+            divcart.innerHTML=str
+        };
+        const showproducts = () => {
+            let str = ""
+            products.forEach((val) => {
+                str += `<div>${val.id}-${val.name}-${val.price}-<button onclick=addToCart(${val.id})>Add to cart</button></div>`
+            });
+            divproducts.innerHTML = str
+        };
+    </script>
+</head>
+
+<body onload="showproducts()">
+    <h1>My store</h1>
+    <hr>
+    <h3>Products</h3>
+    <div id="divproducts">
+
+    </div>
+    <h3>My cart</h3>
+    <div id="divcart"></div>
+</body>
+
+</html>
